@@ -1,0 +1,46 @@
+header {
+	@include site-width;
+	background: $white;
+	position: fixed;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: +2;
+	top: 0;
+	@include box-shadow(rgba($black, .1) 0px 2px 5px);
+	nav {
+		text-align: center;
+		ul {
+			li {
+				display: inline-block;
+				border-right: 1px solid pink;
+				&:last-child {
+					border-right: none;
+				}
+				a {
+					@include font-narrow;
+					color: $pink;
+					@include font-size(25);
+					padding: 5px 15px;
+					&:hover {
+						background: $pink;
+						color: $white;
+					}
+				}
+			}
+			&.social {
+				position: absolute;
+				top: 20px;
+				right: 5%;
+				li {
+					border-right: none;
+					a {
+						@include font-social;
+						text-transform: none;
+						@include font-size(15);
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
+}
