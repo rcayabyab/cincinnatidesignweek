@@ -12,7 +12,7 @@ header {
 		ul {
 			li {
 				display: inline-block;
-				border-right: 1px solid pink;
+				border-right: 1px solid $pink;
 				&:last-child {
 					border-right: none;
 				}

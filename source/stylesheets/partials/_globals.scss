@@ -3,7 +3,8 @@ $pink: #ff0068;
 $blue: #2daebf;
 $teal: #6e8e8e;
 
-$grey: #CBCBCB;
+$light-grey: #F1F1F2;
+$grey: #D1D2D4;
 
 $white: #fff;
 $black: #3E3F41;
@@ -214,16 +215,6 @@ $sprite-size: 400px 3759px;
 }
 
 // OTHER STYLES
-
-.button {
-  @include box-sizing(border-box);
-  // color: $dark-grey;
-  padding: 5px 10px;
-  &:hover {
-    // background-color: $dark-grey;
-    // color: $white;
-  }
-}
 
 @include selection {
   // background: $light-blue;

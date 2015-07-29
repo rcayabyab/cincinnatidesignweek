@@ -22,7 +22,7 @@ body {
 }
 
 p {
-	margin: 0 0 15px;
+	padding: 7px 0 12px;
   color: $black;
   &.leadin {
     @include font-size(20);
@@ -33,9 +33,9 @@ p {
 a {
 	text-decoration: none;
   @include animate-object;
-  // color: $light-blue;
+  color: $blue;
   &:hover {
-    // color: $dark-blue;
+    color: $black;
   }
   &:active {
     position: relative;
@@ -45,35 +45,37 @@ a {
 
 h1 {
 	@include font-size(40);
-	font-family: $font-narrow;
-	span {
-		@include font-size(25);
-    font-family: $font-sans;
-	}
-  @include respond-to(small) {
-    @include font-size(50);
-    span {
-      @include font-size(30);
-    }
-  }
+  min-height: 147px;
+  padding-top: 45px;
+  text-align: center;
+	@include font-narrow;
+  color: $teal;
+  background: image-url("header_background.jpg") top center no-repeat;
 }
 
 h2 {
-
+  @include font-size(28);
+  color: $pink;
 }
 
 h3 {
-  @include font-size(39);
-  font-family: $font-narrow;
-  // color: $light-blue;
-  margin-bottom: 5px;
-  text-align: center;
-  @include respond-to(medium) {
-    text-align: left;
-  }
+  @include font-size(23);
+  @include font-narrow;
 }
 
 h4 {
-  @include font-size(22);
-  // color: $light-blue;
+  @include font-size(16);
+}
+
+.button {
+  @include box-sizing(border-box);
+  @include font-narrow;
+  @include font-size(23);
+  color: $white;
+  background-color: $pink;
+  padding: 5px 10px;
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
 }

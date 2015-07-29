@@ -1,0 +1,44 @@
+table {
+  width: 100%;
+  thead {
+    vertical-align: middle;
+    th {
+      padding: 10px;
+      text-align: center;
+      @include font-narrow;
+      @include font-size(22);
+    }
+  }
+  tbody {
+    text-align: center;
+    tr{
+      font-weight: 300;
+      margin: 2px;
+      &:nth-child(even) {
+        background: $grey;
+        td {
+          border-right: 1px solid $white;
+        }
+      }
+      td {
+        text-align: center;
+        padding: 15px 15px;
+        vertical-align: middle;
+        width: 33%;
+        border-right: 1px solid $grey;
+        &:first-child {
+          text-align: left;
+          background: $light-grey;
+          width: auto;
+          border-right: none;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+        &.nowrap {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
