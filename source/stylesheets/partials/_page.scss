@@ -1,3 +1,27 @@
+.schedule {
+	a {
+		color: $pink;
+		&:hover {
+			background-color: $pink;
+			color: $white;
+		}
+		&.ticket {
+			display: block;
+			color: $blue;
+			@include font-size(14);
+			margin-top: 5px;
+			&:after {
+				content: " ▶";
+				opacity: .5;
+			}
+			&:hover {
+				background-color: $blue;
+				color: $white;
+			}
+		}
+	}
+}
+
 .event {
 	border-top: 1px dashed $grey;
 	margin: 30px 0;
