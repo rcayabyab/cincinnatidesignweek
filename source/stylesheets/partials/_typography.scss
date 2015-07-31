@@ -57,11 +57,22 @@ h1 {
 h2 {
   @include font-size(28);
   color: $pink;
+  .presenters & {
+    @include font-size(25);
+    @include font-narrow;
+    color: $black;
+  }
 }
 
 h3 {
-  @include font-size(23);
+  @include font-size(25);
   @include font-narrow;
+  .presenters & {
+    @include font-size(17);
+    color: $pink;
+    font-family: $font-sans;
+    text-transform: none;
+  }
 }
 
 h4 {

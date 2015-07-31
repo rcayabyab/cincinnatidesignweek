@@ -1,3 +1,12 @@
+.presenters {
+	li {
+		display: inline-block;
+		max-width: 32%;
+		padding: 20px;
+		@include box-sizing(border-box);
+	}
+}
+
 .schedule {
 	a {
 		color: $pink;
