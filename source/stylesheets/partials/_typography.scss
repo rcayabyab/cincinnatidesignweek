@@ -35,7 +35,8 @@ a {
   @include animate-object;
   color: $blue;
   &:hover {
-    color: $black;
+    background-color: $blue;
+    color: $white;
   }
   &:active {
     position: relative;
