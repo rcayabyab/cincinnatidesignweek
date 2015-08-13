@@ -19,22 +19,22 @@ $(document).ready(function(){
 
 	$('.hamburger').click(function(e) { // TOGGLE MOBILE NAV ON HAMBURGER CLICK
 	  e.preventDefault();
-	  $('header nav ul').toggleClass('show_nav');
-	  $(this).toggleClass('menuopen');
+	  $('header nav .main').toggleClass('active');
+	  $(this).toggleClass('active');
 	  //FORCES REDRAW IN MOBILE SAFARI
-	  if (navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)) {
-	    $('header nav ul').hide();
-	    $('header nav ul').get(0).offsetHeight;
-	    $('header nav ul').show();
-	    $(this).hide();
-	    $(this).get(0).offsetHeight;
-	    $(this).show();
-	  }
+	  // if (navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)) {
+	  //   $('header nav ul').hide();
+	  //   $('header nav ul').get(0).offsetHeight;
+	  //   $('header nav ul').show();
+	  //   $(this).hide();
+	  //   $(this).get(0).offsetHeight;
+	  //   $(this).show();
+	  // }
 	});
 
-	$('header nav ul li a').click(function() { // TOGGLE MOBILE NAV ON NAV ITEM CLICK
-	  $('header nav ul').toggleClass('show_nav');
-	  $('.hamburger').toggleClass('menuopen');
+	$('header nav .main li a').click(function() { // TOGGLE MOBILE NAV ON NAV ITEM CLICK
+	  $('header nav .main').toggleClass('active');
+	  $('.hamburger').toggleClass('active');
 	});
 
 });
