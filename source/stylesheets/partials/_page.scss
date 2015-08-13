@@ -1,9 +1,15 @@
 .presenters {
 	li {
 		display: inline-block;
-		max-width: 32%;
+		max-width: 100%;
 		padding: 20px;
 		@include box-sizing(border-box);
+		@include respond-to(xsmall) {
+			max-width: 49%;
+		}
+		@include respond-to(medium) {
+			max-width: 32%;
+		}
 	}
 }
 
