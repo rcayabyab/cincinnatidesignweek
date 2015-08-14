@@ -3,7 +3,18 @@
 		display: inline-block;
 		max-width: 100%;
 		padding: 20px;
+		margin: 0;
+		vertical-align: top;
 		@include box-sizing(border-box);
+		&.morepresenters {
+			h2 {
+				margin-top: 50%;
+				color: $pink;
+				text-align: center;
+				@include font-size(30);
+				line-height: 30px;
+			}
+		}
 		@include respond-to(xsmall) {
 			max-width: 49%;
 		}

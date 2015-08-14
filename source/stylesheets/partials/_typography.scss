@@ -73,6 +73,9 @@ h3 {
     font-family: $font-sans;
     text-transform: none;
   }
+  #partners & {
+    color: $pink;
+  }
 }
 
 h4 {
@@ -89,5 +92,13 @@ h4 {
   &:hover {
     background-color: $white;
     color: $pink;
+  }
+}
+
+ul {
+  li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 0 0 0 30px;
   }
 }
