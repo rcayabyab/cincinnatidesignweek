@@ -89,9 +89,14 @@ h4 {
   color: $white;
   background-color: $pink;
   padding: 5px 10px;
+  display: block;
+  text-align: center;
   &:hover {
     background-color: $white;
     color: $pink;
+  }
+  @include respond-to(xsmall) {
+    display: inline-block;
   }
 }
 
