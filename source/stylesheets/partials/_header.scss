@@ -7,6 +7,30 @@ header {
 	z-index: +2;
 	top: 0;
 	@include box-shadow(rgba($black, .1) 0px 2px 5px);
+	.logo_small {
+		@include hide-text;
+		width: 59px;
+		height: 32px;
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		background: image-url('cdw_logo_small.png') no-repeat;
+		opacity: 1;
+		margin-left: -29px;
+		&:hover {
+			opacity: .5;
+		}
+		&.active {
+			top: 15px;
+		}
+		@include respond-to(medium) {
+			left: 5%;
+			margin-left: 0;
+			&.active {
+				top: 20px;
+			}
+		}
+	}
 	.hamburger {
 		position: absolute;
 		display: block;
