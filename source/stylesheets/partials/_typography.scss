@@ -107,3 +107,11 @@ ul {
     margin: 0 0 0 30px;
   }
 }
+
+ol {
+  li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 0 0 0 30px;
+  }
+}
